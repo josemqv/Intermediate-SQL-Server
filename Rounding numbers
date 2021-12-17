@@ -1,4 +1,4 @@
 -- Round Cost to the nearest dollar
 SELECT Cost, 
-       ___ AS RoundedCost
+       ROUND(Cost, 0) AS RoundedCost
 FROM Shipments
