@@ -1,0 +1,6 @@
+SELECT OrderID, TerritoryName, 
+       -- Total price using the partition
+       SUM(OrderPrice) 
+       -- Create the window and partitions
+       OVER(PARTITION BY TerritoryName) AS TotalPrice
+FROM Orders
