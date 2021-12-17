@@ -1,0 +1,21 @@
+-- Declare the variable (a SQL Command, the var name, the datatype)
+DECLARE @counter INT
+
+-- Set the counter to 20
+SET @counter = 20
+
+-- Select the counter
+SELECT @counter
+
+
+-- Declare the variable (a SQL Command, the var name, the datatype)
+DECLARE @counter INT 
+
+-- Set the counter to 20
+SET @counter = 20
+
+-- Select and increment the counter by one 
+SELECT @counter= @counter+1
+
+-- Print the variable
+SELECT @counter
